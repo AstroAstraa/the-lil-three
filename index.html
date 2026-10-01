@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#a9d8ef">
+
+  <title>The Lil Three 🤡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="floating-sticker sticker-one">🌷</div>
+  <div class="floating-sticker sticker-two">✨</div>
+  <div class="floating-sticker sticker-three">🎀</div>
+  <div class="floating-sticker sticker-four">☁️</div>
+
+  <header class="hero">
+    <div class="hero-cloud cloud-one"></div>
+    <div class="hero-cloud cloud-two"></div>
+
+    <div class="hero-content">
+      <div class="tiny-label">OUR VERY IMPORTANT NONSENSE ✦</div>
+
+      <h1>The Lil Three</h1>
+
+      <p class="nickname-line">
+        Ongapu · Betku · Bykolu 🤡
+      </p>
+
+      <p class="hero-description">
+        A tiny corner for all the things we think of while pretending to study.
+      </p>
+
+      <div id="user-area" class="user-area">
+        <span id="welcome-text">Getting the little corner ready...</span>
+      </div>
+
+      <a href="#ideas" class="main-button">
+        💭 See our ideas
+      </a>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- INTRO -->
+    <section class="intro-section">
+      <div class="section-heading">
+        <span class="eyebrow">FOR LATER 🌷</span>
+        <h2>Things we'll do when exams stop bullying us</h2>
+        <p>
+          Whenever one of us suddenly gets an idea, put it here.
+          Future us can deal with the consequences.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- MAIN IDEAS -->
+    <section id="ideas" class="ideas-section">
+
+      <div class="section-heading left-heading">
+        <span class="eyebrow">THE IMPORTANT PART</span>
+        <h2>Our Little Ideas 💭</h2>
+        <p>
+          Add anything. Big plans, tiny plans, ridiculous plans,
+          or something you suddenly thought of at 2 AM.
+        </p>
+      </div>
+
+      <div class="add-idea-card">
+        <input
+          id="idea-input"
+          type="text"
+          maxlength="200"
+          placeholder="We should totally..."
+          autocomplete="off"
+        >
+
+        <button id="add-idea-button" class="primary-button">
+          + Add idea
+        </button>
+      </div>
+
+      <div id="ideas-list" class="ideas-list">
+        <div class="loading-card">
+          <span>☁️</span>
+          Loading our nonsense...
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ACTIVITIES -->
+    <section class="activities-section">
+
+      <div class="section-heading">
+        <span class="eyebrow">THINGS WE MIGHT DO</span>
+        <h2>Our Little Plans ✨</h2>
+        <p>
+          These can grow with us. Add checklist items, notes and useful links.
+        </p>
+      </div>
+
+      <div id="activities-container" class="activities-grid"></div>
+
+    </section>
+
+
+    <!-- RANDOM IDEAS -->
+    <section class="random-section">
+
+      <div class="random-card">
+
+        <div class="random-icon">🪩</div>
+
+        <div>
+          <span class="eyebrow">NO CATEGORY NEEDED</span>
+          <h2>Random Nonsense</h2>
+          <p>
+            An idea does not need to make sense to deserve a place here.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="add-idea-card random-add">
+
+        <input
+          id="random-input"
+          type="text"
+          maxlength="200"
+          placeholder="What if we..."
+          autocomplete="off"
+        >
+
+        <button id="add-random-button" class="secondary-button">
+          + Save it
+        </button>
+
+      </div>
+
+      <div id="random-list" class="ideas-list"></div>
+
+    </section>
+
+
+    <!-- FUTURE -->
+    <section class="future-section">
+
+      <div class="future-card">
+
+        <div class="future-sun">🌤️</div>
+
+        <div>
+          <span class="eyebrow">COMING LATER</span>
+
+          <h2>After Exams 📅</h2>
+
+          <p>
+            The schedule lives here someday.
+            For now, we're just collecting reasons to survive until then.
+          </p>
+
+          <div class="future-note">
+            <span>🔒</span>
+            <span>Schedule section intentionally sleeping...</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="footer-heart">♡</div>
+
+    <p>
+      Made for the Lil Three
+    </p>
+
+    <small>
+      Ongapu · Betku · Bykolu
+    </small>
+
+    <p class="footer-note">
+      ✦ collect ideas now · cause chaos later ✦
+    </p>
+
+  </footer>
+
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/11.10.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.10.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.10.0/firebase-database-compat.js"></script>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
