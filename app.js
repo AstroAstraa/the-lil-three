@@ -19,11 +19,12 @@
 const firebaseConfig = {
   apiKey: "AIzaSyCgB9wfgAfQyyma2b07snJ7MY788vebE9Y",
   authDomain: "the-lil-three.firebaseapp.com",
+  databaseURL: "https://console.firebase.google.com/u/4/project/the-lil-three/database/the-lil-three-default-rtdb/data/~2F?utm_source=chatgpt.com",
   projectId: "the-lil-three",
   storageBucket: "the-lil-three.firebasestorage.app",
   messagingSenderId: "1018317501405",
   appId: "1:1018317501405:web:684d5a87e40507f85f3c34"
-};
+}; 
 
 
 /* =========================================================
